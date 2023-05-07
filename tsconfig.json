@@ -18,6 +18,10 @@
       "@/*": ["./src/*"]
     }
   },
+  "typedocOptions": {
+    "entryPoints": ["src/pages/index.tsx"],
+    "out": "docs",
+  },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
