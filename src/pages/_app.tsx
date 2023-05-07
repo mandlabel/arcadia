@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { SessionProvider } from 'next-auth/react'
 import { Session } from 'next-auth'
+import 'cesium/Build/Cesium/Widgets/widgets.css'
 
 /**
  * Custom interface extending `AppProps` to include the `session` prop.
