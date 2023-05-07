@@ -1,11 +1,31 @@
 import * as Cesium from 'cesium'
 import React, { useEffect, useRef } from 'react'
 
-const CesiumMap: React.FC = () => {
+/**
+ * CesiumJS Map Component.
+ *
+ * @function CesiumMap
+ * @returns {React.FC} The map with marker.
+ */
+export const CesiumMap: React.FC = () => {
+  /**
+   * Reference to the Cesium container div element.
+   *
+   * @type {React.RefObject<HTMLDivElement>}
+   */
   const cesiumContainerRef = useRef<HTMLDivElement>(null)
+
+  /**
+   * Reference to the Cesium Viewer instance.
+   *
+   * @type {React.RefObject<Cesium.Viewer>}
+   */
   const viewerRef = useRef<Cesium.Viewer>()
 
   useEffect(() => {
+    /**
+     * Fetches coordinates data from the API and initializes the Cesium Viewer.
+     */
     const fetchData = async () => {
       try {
         const response = await fetch('/api/coordinates')
@@ -67,5 +87,3 @@ const CesiumMap: React.FC = () => {
 
   return <div ref={cesiumContainerRef} style={{ height: '100%' }} />
 }
-
-export default CesiumMap
