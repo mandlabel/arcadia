@@ -1,15 +1,16 @@
 import React from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import Image from 'next/image'
-import Map from './content/map'
+import { Map } from './content/map'
 /**
  * Renders the Login component.
  *
  * Displays user information and actions based on session status.
+ * @function Login
  * @returns The JSX element representing the Login component.
  */
 
-const Login = () => {
+export const Login = () => {
   const { data: session } = useSession()
 
   if (session) {
@@ -70,4 +71,3 @@ const Login = () => {
     )
   }
 }
-export default Login

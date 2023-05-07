@@ -1,6 +1,12 @@
 import NextAuth from 'next-auth/next'
 import GoogleProvider from 'next-auth/providers/google'
 
+/**
+ * Creates a NextAuth configuration object with Google provider.
+ *
+ * @function createNextAuthConfig
+ * @returns {object} The NextAuth configuration object.
+ */
 export default NextAuth({
   providers: [
     GoogleProvider({
