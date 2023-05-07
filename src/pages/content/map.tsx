@@ -5,6 +5,7 @@ import { CesiumMap } from '@/components/cesium_map'
  * @function Map
  * @returns The JSX element representing the Content component.
  */
-export const Map = () => {
+const Map = () => {
   return <CesiumMap />
 }
+export default Map

@@ -20,6 +20,7 @@
   },
   "typedocOptions": {
     "entryPoints": ["src/**/*.{ts,tsx}"],
+    "exclude": ["src/api/hello.ts", "src/pages/_app.tsx", "src/pages/_document.tsx"],
     "out": "docs",
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

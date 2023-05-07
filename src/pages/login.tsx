@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import Image from 'next/image'
-import { Map } from './content/map'
+import Map from './content/map'
 /**
  * Renders the Login component.
  *
@@ -10,7 +10,7 @@ import { Map } from './content/map'
  * @returns The JSX element representing the Login component.
  */
 
-export const Login = () => {
+const Login = () => {
   const { data: session } = useSession()
 
   if (session) {
@@ -71,3 +71,4 @@ export const Login = () => {
     )
   }
 }
+export default Login
