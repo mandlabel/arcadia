@@ -1,6 +1,6 @@
-import { Login } from './login'
-import { Header } from './layout/header'
-import { Footer } from './layout/footer'
+import Login from './login'
+import Header from './layout/header'
+import Footer from './layout/footer'
 /**
  * Renders the Home component.
  *
