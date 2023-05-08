@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from 'react'
  * CesiumJS Map Component.
  *
  * @function CesiumMap
+ * It zooms in on the map according to the coordinates obtained from the api coordinates route, and then places the pin at the specified position. The data is requested from the API when the page is loaded.
  * @returns {React.FC} The map with marker.
  */
 export const CesiumMap: React.FC = () => {
